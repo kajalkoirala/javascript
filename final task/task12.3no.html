@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+
+<body>
+    <button>
+        <div onmouseover="mOver()">here you goo</div>
+    </button><br><br>
+    <div id="kajal"></div><br><br>
+    <button>
+        <div onmouseout="mOut()">here also please</div>
+    </button>
+    <div id="koirala"></div>
+    <script>
+        function mOver() {
+            document.getElementById("kajal").innerHTML = "Thank You"
+        }
+        function mOut() {
+            document.getElementById("koirala").innerHTML = "Mouse Over Me"
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <script>
+        function password() {
+
+            var password = document.getElementById('pass').value;
+            var confirm_password = document.getElementById('confirm_password').value;
+            if (password != confirm_password) {
+                document.getElementById('msg').style.color = 'black';
+                document.getElementById('msg').innerHTML= 'Use same password';
+            }
+            else {
+                document.getElementById('msg').style.color = 'blue';
+                document.getElementById('msg').innerHTML =' Password is same ';
+            }
+        }
+    </script>
+
+
+    <form>
+
+        <td> Enter the Password </td>
+        <input type="password" id="pass" value=""> <br>
+        <td>Confirm the Password </td>
+        <input type="password" id="confirm_pass" value="" onkeyup="password()">
+        <span id="msg" style="color:purple"> </span> <br><br>
+
+
+        <input type="submit" value="Submit">
+
+
+        <button type="reset" value="Reset">Reset</button>
+    </form>
+
+</body>
+
+</html>
